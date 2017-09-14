@@ -1,0 +1,463 @@
+﻿/*----------------------------------
+--------------- INDEX --------------
+1. COLOURS
+2. GENERAL
+3. HEADER
+4. NAVIGATION
+5. FOOTER
+6. RESPONSIVE
+------------------------------------
+----------------------------------*/
+
+/*---------------------------
+---------- COLOURS ----------
+---------------------------*/
+
+/*light grey = #E6E7E8*/
+/*light blue = #7ECEFD*/
+/*dark blue = #2185C5*/
+/*dark grey = #58595B*/
+
+
+/*---------------------------
+---------- GENERAL ----------
+---------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/*img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+/*textarea {
+	width: 400px;
+	height: 200px;
+}*/
+
+.wrapper {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.glyphicon-inverse {
+    color: #fff;
+}
+﻿
+/* Set width on the form input elements since they're 100% wide by default */
+input {
+	width: 100px;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color: #58595B;
+}
+
+a {
+    color: #2185C5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #58595B;
+    text-decoration: none;
+}
+
+/*---------------------------
+---------- HEADER -----------
+---------------------------*/
+
+.header {
+    min-height: 130px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.header__site-name {
+    font-weight:bold;
+    text-align: center;
+}
+
+.header__logo img {
+    height: 100px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.header__btn-donate {
+    /*background-color: #7ECEFD;*/
+    background-color: #58595B;
+    color: #fff;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+.header__btn-donate:hover {
+    background-color: #7ECEFD;
+}
+
+.header__donate {
+    margin-top: 20px;
+}
+
+/*---------------------------
+-------- NAVIGATION ---------
+---------------------------*/
+
+.nav__main-navbar {
+    width: 100%;
+    float: none;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	list-style: none;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #2285c6;
+    overflow: hidden;
+}
+
+nav__main-navbar ul {
+    text-align: center;
+}
+
+.nav__main-navbar li a {
+    color:white;
+}
+
+.nav__main-navbar li a:hover, .nav__main-navbar .active {
+     background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav__main-navbar li {
+    display: inline-block;
+}
+
+.nav__search {
+    display: none;
+    margin-bottom: 7.5px;
+    padding: 0 20px;
+}
+
+.navbar-collapse.in {
+    overflow: hidden;
+}
+
+/*---------------------------
+---------- FOOTER -----------
+---------------------------*/
+
+.footer {
+    background-color: #E6E7E8;
+    padding: 20px
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer__contact p, .footer__copyright p {
+    margin-bottom: 0;
+}
+
+.footer__extras ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    
+}
+
+.footer__extras li a {
+    color: #2185C5;
+}
+
+
+
+/*---------------------------
+-------- CAROUSEL ---------
+---------------------------*/   
+.main__carousel {
+    margin: 20px 0;
+    display: block;
+}
+
+.carousel{
+    background: #2f4357;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel .item {
+    height: 400px;
+}
+
+.carousel .item img {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.carousel-inner__text {
+    position: absolute;
+    top: 75px;
+    left: 125px;
+    z-index: 10;
+}
+
+.carousel-inner__text h3, .carousel-inner__text p {
+    color: white;
+}
+
+.carousel-control .glyphicon {
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+ 
+.carousel-indicators .active {
+    background-color: #7ECEFD;
+    border: none;
+}
+
+/*---------------------------
+-------- HOME ICONS ---------
+---------------------------*/
+.home-icons {
+    margin-bottom: 20px;
+}
+
+.home-icons__column {
+    text-align: center;
+}
+
+.home-icons__column h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.home-icons__border {
+    height: 190px;
+    width: 190px;
+    border: 6px solid #7ECEFD;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.home-icons__icon {
+    height: 70%;
+    width: 70%;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+/*---------------------------
+----------- ASIDE -----------
+---------------------------*/
+
+.secondary-aside {
+    height: 620px; /* <<<<<<<<<------------- CHANGE THIS TO YOUR DESIRED PAGE HEIGHT ------------------- */
+    background-color: #E6E7E8;
+    margin: 0;    
+}
+
+.secondary-aside h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.secondary-main {
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+.page-title {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.secondary-aside {
+    padding: 0;
+}
+
+.side-nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    background-color: #7ECEFD;
+    padding: 10px 0 10px 40px;
+}
+
+
+/*---------------------------
+--------- DONATIONS ---------
+---------------------------*/
+
+.donate-column left {
+    margin-right: 20px;
+}
+
+
+/*---------------------------
+-------- RESPONSIVE ---------
+---------------------------*/
+
+@media all and (max-width: 960px) {
+
+    .nav__main-navbar li a {
+        margin: inherit 5px;
+    }
+
+    .carousel{
+        background: #2f4357;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .carousel .item {
+        height: 350px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header__logo, .header__search, .mobile-hide, nav__main-navbar, .footer__nav, .secondary-aside {
+        display: none;
+    }
+
+    .nav__search {
+        display: block;
+    }
+
+    .navbar-toggle {
+        width: 50px;
+        height: 50px;
+        float: right;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .navbar-toggle .icon-bar {
+        width: 35px;
+        height: 4px;
+        margin: 7px;
+        background-color: black;
+        border-radius: 3px;
+    }
+
+    .carousel{
+        background: #2f4357;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .carousel .item {
+        height: 300px;
+    }
+
+    .footer__copyright, .footer__extras {
+        margin-bottom: 40px;
+    }
+
+    .footer__content {
+        margin-left: 10%;
+    }
+
+    .home-icons__column:nth-child(1), .home-icons__column:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media all and (max-width: 520px) {
+    .header__logo, .header__search, .mobile-hide, .footer__nav, .secondary-aside {
+        display: none;
+    }
+
+    .nav__search {
+        display: block;
+    }
+
+    .carousel{
+        background: #2f4357;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .carousel .item {
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .header__logo, .header__search, .mobile-hide, .footer__nav, .secondary-aside {
+        display: none;
+    }
+
+    .nav__search {
+        display: block;
+    }
+
+    .carousel{
+        background: #2f4357;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .carousel .item {
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .header__logo, .header__search, .mobile-hide, .footer__nav, .secondary-aside {
+        display: none;
+    }
+
+    .nav__search {
+        display: block;
+    }
+
+    .carousel{
+        background: #2f4357;
+        height: 175px;
+        overflow: hidden;
+    }
+
+    .carousel .item {
+        height: 175px;
+    }
+}

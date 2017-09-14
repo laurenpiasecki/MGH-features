@@ -1,0 +1,68 @@
+﻿@model Feature1.Models.Volunteer
+
+@{
+	ViewBag.Title = "Delete";
+}
+<html>
+<body>
+	<h2>Remove Volunteer</h2>
+
+	<h3>Are you sure you want to delete this?</h3>
+	<div>
+		<h4>Volunteer</h4>
+		<hr />
+		<dl class="dl-horizontal">
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_first)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_first)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_last)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_last)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_phone)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_phone)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_email)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_email)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_comment)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_comment)
+			</dd>
+
+		</dl>
+
+		@using (Html.BeginForm())
+		{
+			@Html.AntiForgeryToken()
+
+			<div class="form-actions no-color">
+				<input type="submit" value="Delete" class="btn btn-default" /> |
+				@Html.ActionLink("Back to List", "Index")
+			</div>
+		}
+	</div>
+</body>
+</html>

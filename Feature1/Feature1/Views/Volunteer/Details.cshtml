@@ -1,0 +1,61 @@
+﻿@model Feature1.Models.Volunteer
+
+@{
+	ViewBag.Title = "Details";
+}
+<html>
+<body>
+	<h2>Volunteer Details</h2>
+
+	<div>
+		<h4>Volunteer</h4>
+		<hr />
+		<dl class="dl-horizontal">
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_first)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_first)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_last)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_last)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_phone)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_phone)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_email)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_email)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Volunteer_comment)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Volunteer_comment)
+			</dd>
+
+		</dl>
+	</div>
+	<p>
+		@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+		@Html.ActionLink("Back to List", "Index")
+	</p>
+</body>
+</html>
